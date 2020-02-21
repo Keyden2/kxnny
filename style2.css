@@ -1,0 +1,280 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+@font-face {
+  src: url(fonts/FUTRFW.TTF);
+  font-family: asd;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+}
+
+#main {
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+#myVideo {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  right: 1;
+  bottom: 0;
+  position: absolute;
+}
+
+.texto-centro {
+  text-shadow: white -2px 3px;
+  color: rgb(132, 0, 193, 255);
+  font-family: asd;
+  font-size: 100px;
+  margin-top: 30vh;
+  text-align: center;
+  padding: 50px;
+}
+
+.subtexto {
+  margin-left: 10%;
+  margin-right: 10%;
+  text-shadow: rgba(255, 194, 38, 0.411) -2px 2px;
+  color: rgb(132, 0, 193, 255);
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding: 50px;
+  font-size: 2.5rem;
+}
+
+.navbar {
+  z-index: 1;
+  top: 0;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 90px;
+  line-height: 150px;
+  transition: top 0.3s;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.navbar ul li a {
+  font-size: 22px;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  color: rgb(255, 194, 38);
+  padding: 33px;
+}
+
+.navbar ul li a:hover {
+  transition: 0.6s all;
+  color: white;
+  background-color: rgb(132, 0, 193, 255);
+}
+
+.nav-links {
+  float: right;
+  font-size: 20px;
+  display: flex;
+  list-style: none;
+  width: 50%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* ----------------------------------------------------------------------------- */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 2.5px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e4e4e4;
+  border: 0px none #ffffff;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(37, 0, 54);
+  border: 1px none #ffffff;
+}
+
+/* ---------------------------------------------------------- */
+
+/* responsive  */
+
+@media screen and (max-width: 1260px) {
+  .line {
+    width: 30px;
+    height: 4px;
+    background: rgb(255, 255, 255);
+    margin: 5px;
+  }
+
+  nav {
+    position: relative;
+  }
+
+  .responsive {
+    position: fixed !important;
+    cursor: pointer;
+    right: 5%;
+    top: 5%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0%;
+    background: rgb(95, 0, 139);
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -60%);
+    -webkit-clip-path: circle(100px at 90% -60%);
+    transition: all 0.7s ease-out;
+    pointer-events: none;
+  }
+
+  .nav-links.open {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    z-index: 1;
+    clip-path: circle(1390px at 90% 3%);
+    -webkit-clip-path: circle(1390px at 90% 3%);
+    pointer-events: all;
+  }
+
+  .nav-links.open::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .nav-links li a {
+    font-size: 25px;
+  }
+
+  .nav-links li:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
+  }
+
+  .nav-links li:nth-child(2) {
+    transition: all 0.5s ease 0.4s;
+  }
+
+  .nav-links li:nth-child(3) {
+    transition: all 0.5s ease 0.6s;
+  }
+
+  li.fade {
+    opacity: 1;
+  }
+}
+
+/* -------------------------------------------------------------------- */
+
+#Introduction {
+  height: 100vh;
+  background: crimson;
+}
+
+#Introduction h1 {
+  color: white;
+  padding-top: 80px;
+  padding-bottom: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 52px;
+  text-align: center;
+}
+
+#fpsvideo1 {
+  width: 100%;
+  height: 580px;
+}
+
+.box {
+  margin-top: 4%;
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+  background: white;
+}
+
+.fps-title {
+  font-size: 3rem;
+  font-family: asd;
+  padding: 40px 10px;
+}
+
+.desc {
+  font-size: 1.6rem;
+  padding-bottom: 40px;
+}
+
+p {
+  margin-top: 15px;
+  padding-bottom: 20px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.espaciorojoxd {
+  background: crimson;
+  height: 200px;
+  width: 100%;
+}
+
+.espaciorojoxd h2 {
+  color: white;
+  padding-top: 80px;
+  padding-bottom: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 45px;
+  text-align: center;
+}
+
+.pc2 {
+  margin-top: -70px;
+}
+
+.espaciorojo2 {
+  background: crimson;
+  height: 200px;
+  width: 100%;
+}
+
+.espaciorojo h2 {
+  color: white;
+  padding-top: 80px;
+  padding-bottom: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 45px;
+  text-align: center;
+}
