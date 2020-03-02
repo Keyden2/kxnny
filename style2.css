@@ -247,16 +247,17 @@ p {
 
 .espaciorojoxd {
   background: crimson;
-  height: 200px;
+  height: 25vh;
   width: 100%;
+  padding-bottom: 30px;
 }
 
 .espaciorojoxd h2 {
   color: white;
   padding-top: 80px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   font-family: "Open Sans", sans-serif;
-  font-size: 45px;
+  font-size: 52px;
   text-align: center;
 }
 
@@ -277,4 +278,265 @@ p {
   font-family: "Open Sans", sans-serif;
   font-size: 45px;
   text-align: center;
+}
+
+/* RESPONSIVEEEEEEEEEEEEEEEEEEEEE */
+
+@media screen and (max-width: 925px) {
+  .espaciorojoxd h2 {
+    padding-bottom: 80px;
+  }
+
+  .faqs details {
+    width: 600px;
+  }
+
+  .faqs details p {
+    padding: 0;
+    font-size: 1.25rem;
+    margin-bottom: 90px;
+  }
+
+
+}
+
+@media screen and (max-width: 725px) {
+  .subtexto {
+    margin-top: -30px;
+  }
+
+  .faqs details {
+    width: 450px;
+  }
+
+  .faqs details p {
+    padding: 0;
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .espaciorojoxd h1 {
+    font-size: 50px !important;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .espaciorojoxd h1 {
+    font-size: 44px !important;
+  }
+
+  .faqs details p {
+    padding: 0;
+    font-size: 1.2rem;
+    margin-bottom: 10 0px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .texto-centro {
+    padding: 0;
+    font-size: 80px;
+  }
+
+  .subtexto {
+    margin-top: -70px;
+    line-height: 2.5rem;
+    margin: 0;
+  }
+
+  .faqs details {
+    width: 350px;
+  }
+
+  .faqs details p {
+    padding: 0;
+    font-size: 1.2rem;
+    margin-bottom: 120px;
+  }
+}
+
+@media screen and (max-width: 604px) {
+  .espaciorojoxd h1 {
+    font-size: 40px !important;
+  }
+
+  .faqs details {
+    width: 350px;
+  }
+
+  .faqs details p {
+    padding: 0;
+    font-size: 1.2rem;
+    margin-bottom: 130px;
+  }
+}
+
+@media screen and (max-width: 548px) {
+  .texto-centro {
+    padding: 0;
+    font-size: 60px;
+  }
+
+  .espaciorojoxd h1 {
+    padding: 10px 10px !important;
+    font-size: 44px !important;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .subtexto {
+    margin-top: -70px;
+    line-height: 2.5rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .faqs details {
+    width: 300px;
+  }
+
+  .faqs details p {
+    padding: 0;
+    font-size: 1.2rem;
+    margin-bottom: 160px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .texto-centro {
+    font-size: 60px;
+    padding-bottom: 50px;
+  }
+
+  .faqs details {
+    width: 250px;
+  }
+
+  .faqs details p {
+    padding: 0;
+    font-size: 1.2rem;
+    margin-bottom: 200px;
+  }
+
+  .subtexto {
+    font-size: 2rem;
+  }
+
+  .espaciorojoxd h1 {
+    text-align: center;
+    font-size: 2.2rem !important;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .faqs details {
+    width: 200px;
+  }
+
+  .faqs details p {
+    padding: 0;
+    font-size: 1.2rem;
+    margin-bottom: 270px;
+  }
+}
+
+@media screen and (max-width: 317px) {
+  .subtexto {
+    margin-top: -100px;
+    line-height: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.pc2 {
+  margin-top: -30px;
+}
+
+.espaciorojo2 {
+  background: #8e0e00;
+  margin-top: 3rem;
+}
+
+.faq {
+  padding: 70px;
+  text-align: center;
+  font-size: 5rem;
+  color: white;
+}
+
+.faqs {
+  padding: 20px 20px 20px;
+  background: #8e0e00;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top,
+      #1f1c18,
+      #8e0e00);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top,
+      #1f1c18,
+      #8e0e00);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+details {
+  transition: height 1s ease;
+  width: 800px;
+  background: rgb(132, 0, 193);
+  padding: 30px 50px;
+  border-radius: 7px;
+  margin-top: 20px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.text {
+  margin-bottom: 15px;
+  padding: 10px 10px;
+  color: rgb(255, 255, 255);
+  font-size: 1.25rem;
+}
+
+details:hover {
+  transition: 0.5s ease-in-out;
+  background: rgb(102, 12, 30);
+}
+
+details summary {
+  font-size: 1.7rem;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+summary::-webkit-details-marker {
+  background: aqua;
+  display: none;
+}
+
+details[open] summary~* {
+  height: 2.5em;
+  animation: sweep 0.5s ease-in-out;
+}
+
+details:not([open]) summary~* {
+  animation: sweep 0.5s ease-in-out;
+}
+
+@keyframes sweep {
+  0% {
+    opacity: 0;
+    margin-left: -10px;
+  }
+
+  100% {
+    opacity: 1;
+    margin-left: 0px;
+  }
 }
