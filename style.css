@@ -42,7 +42,7 @@ body {
   color: rgb(132, 0, 193, 255);
   font-family: asd;
   font-size: 100px;
-  margin-top: 30vh;
+  margin-top: 35vh;
   text-align: center;
   padding: 50px;
 }
@@ -86,6 +86,11 @@ body {
   height: 100%;
   justify-content: space-around;
   align-items: center;
+}
+
+.logoide {
+  transition: 0.4s;
+  padding-left: 30px;
 }
 
 /* ----------------------------------------------------------------------------- */
@@ -347,6 +352,19 @@ body {
 }
 
 @media screen and (max-width: 530px) {
+  #myVideo {
+    overflow-x: hidden;
+  }
+
+  .texto-centro {
+    justify-content: center;
+    position: relative;
+    font-size: 75px;
+    right: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+
   .products-carta .product-box .product-bottom h3 {
     padding: 10px !important;
   }
@@ -441,61 +459,6 @@ body {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------------------- */
-/* 
-#buy {
-  padding: 3%;
-  display: flex;
-  justify-content: center;
-  width: auto;
-  text-align: center;
-  flex-wrap: wrap;
-}
-
-#buy .our-products {
-  margin-right: 30%;
-  margin-left: 30%;
-
-}
-
-
-#buy figure {
-  border-collapse: separate;
-  margin-top: 20px;
-  border-radius: 25px;
-  padding: 20px;
-}
-
-#buy figure img {
-  margin-left: -2%;
-  width: 480px;
-  border-radius: 45px;
-  box-shadow: rgba(250, 250, 250, 0.158) 10px 10px 10px;
-}
-
-#buy figure figcaption {
-  margin-top: 5px;
-  padding: 5px;
-  font-size: 23px;
-  text-align: center;
-  width: auto;
-  color: rgb(163, 0, 238);
-}
-
-
-.product-box {
-  margin-right: 20px;
-  margin-bottom: 20px;
-  width: 500px;
-  position: relative;
-  background: white;
-  height: 500px;
-}
-
-.product-box p {
-  font-size: 20px;
-  padding: 15px 10px;
-} */
 
 .our-products .product-testo {
   color: white;
@@ -526,10 +489,20 @@ body {
   background: white;
   margin: 5px;
   margin-bottom: 50px;
-  width: 500px;
+  margin-left: 25px;
+  width: 470px;
   padding: 20px;
   line-height: 20px;
   position: relative;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.products-carta .product-box:hover {
+  z-index: 0;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
 .products-carta .product-box .product-bottom h3 {
@@ -590,4 +563,64 @@ button:hover {
 .fpsex {
   color: #bd1fb0;
   text-decoration: none;
+}
+
+/* asdasd */
+.spinner {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#overlay {
+  height: 100%;
+  width: 100%;
+  background: rgb(66, 4, 95);
+  z-index: 99999999;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
