@@ -20,7 +20,7 @@ window.addEventListener('load', function () {
   function timeFunction() {
     setTimeout(function () {
       alert("");
-    }, 3500);
+    }, 4200);
   }
   overlay.style.display = 'none';
 })
