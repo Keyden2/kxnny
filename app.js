@@ -11,3 +11,16 @@ responsive.addEventListener("click", () => {
 navLinks.addEventListener("click", function() {
   responsive.click();
 });
+
+
+
+var overlay = document.getElementById("overlay");
+
+window.addEventListener('load', function () {
+  function timeFunction() {
+    setTimeout(function () {
+      alert("");
+    }, 3500);
+  }
+  overlay.style.display = 'none';
+})
