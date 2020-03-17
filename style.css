@@ -628,3 +628,49 @@ button:hover {
     transform: rotate(360deg);
   }
 }
+
+/* ----------------------------------- */
+
+
+#page-footer {
+  padding-top: 10px;
+  height: 10vh;
+  background: #9800DF;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #9800DF, rgb(103, 0, 151));
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #9800DF, rgb(103, 0, 151));
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+  justify-content: space-around;
+  text-decoration: none !important;
+  padding-bottom: 20px;
+}
+
+.footer-media a {
+  color: white;
+  margin: 40px;
+  text-decoration: none !important;
+
+}
+
+.footer-media {
+  margin-bottom: 10px !important;
+  transition: 1s;
+}
+
+.footer-media:hover {
+  transform: scale(1.14) !important;
+}
+
+.footer-media a:hover {
+  transition: 1s;
+  color: #5c69ff;
+}
+
+.footer-copyright {
+  padding-top: 10px !important;
+  font-size: 18px;
+  color: white;
+  padding: 15px;
+}
