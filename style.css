@@ -406,10 +406,13 @@ body {
   }
 
   .products-carta .product-box .product-img img {
-    width: 340px !important;
-    height: 100px;
+    width: 320px !important;
+    height: 110px;
   }
-
+  .product-p {
+    font-size: 19px !important;
+  }
+  
   .under-purchase {
     display: none;
   }
