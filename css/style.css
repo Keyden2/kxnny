@@ -4,7 +4,7 @@
 }
 
 @font-face {
-  src: url(fonts/FUTRFW.TTF);
+  src: url(/kxnny/fonts/FUTRFW.TTF);
   font-family: asd;
 }
 
@@ -409,10 +409,11 @@ body {
     width: 320px !important;
     height: 110px;
   }
+
   .product-p {
     font-size: 19px !important;
   }
-  
+
   .under-purchase {
     display: none;
   }
@@ -460,8 +461,6 @@ body {
   transition: all 0.4s ease 0.2s;
   color: #ffffff;
 }
-
-/* ---------------------------------------------------------------------------------- */
 
 
 .our-products .product-testo {
@@ -547,22 +546,14 @@ body {
   box-shadow: rgba(250, 250, 250, 0.158) 10px 10px 10px;
 }
 
-button {
-  border-radius: 15px;
-  border: 1px solid #ffffff;
-  background: rgb(14, 13, 13);
-  padding: 10px 20px;
-  font-size: 20px;
-  font-family: "Montserrat", sans-serif;
-  margin: 10px;
-  transition: 0.8s;
-  color: aqua;
+.receipt_container {
+  transform: scale(1.1);
 }
 
-button:hover {
-  background-color: white;
-  color: #bd1fb0;
-}
+
+/* ---------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------- */
+
 
 .fpsex {
   color: #bd1fb0;
@@ -592,7 +583,6 @@ button:hover {
   left: 0;
   top: 0;
 }
-
 
 .lds-ring div {
   box-sizing: border-box;
@@ -628,6 +618,7 @@ button:hover {
     transform: rotate(360deg);
   }
 }
+
 
 /* ----------------------------------- */
 
@@ -673,4 +664,36 @@ button:hover {
   font-size: 18px;
   color: white;
   padding: 15px;
+}
+
+
+
+.button {
+  background-image: none;
+  background-color: rgb(129, 49, 226) !important;
+  position: relative;
+  font-size: 20px !important;
+  transition: 0.8s;
+  letter-spacing: normal !important;
+  width: auto !important;
+  height: auto !important;
+  display: inline-block !important;
+  box-sizing: border-box !important;
+  cursor: pointer !important;
+  box-shadow: rgba(74, 84, 100, 0.1) 0px 1px 1px !important;
+  line-height: 22px !important;
+  font-weight: 500 !important;
+  text-align: center !important;
+  color: white !important;
+  user-select: none !important;
+  background: linear-gradient(rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0)) rgb(141, 70, 229) !important;
+  padding: 10px 20px !important;
+  margin: 20px auto !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: rgb(129, 49, 226) !important;
+  border-image: initial !important;
+  border-radius: 4px !important;
+  text-decoration: none !important;
+  transition: 0.4s;
 }
