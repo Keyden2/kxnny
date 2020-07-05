@@ -4,7 +4,7 @@
 }
 
 @font-face {
-  src: url(fonts/FUTRFW.TTF);
+  src: url(/kxnny/fonts/FUTRFW.TTF);
   font-family: asd;
 }
 
@@ -40,7 +40,7 @@ body {
 .texto-centro {
   text-shadow: white -2px 3px;
   color: rgb(132, 0, 193, 255);
-  font-family: asd;
+  font-family: asd !important;
   font-size: 100px;
   margin-top: 30vh;
   text-align: center;
