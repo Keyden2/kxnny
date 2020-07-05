@@ -9,12 +9,17 @@
 
 <url>
   <loc>https://kxnny.club/</loc>
-  <lastmod>2020-03-11T00:41:32+00:00</lastmod>
+  <lastmod>2020-07-05T03:34:06+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://kxnny.club/software</loc>
+  <lastmod>2020-07-05T03:34:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://kxnny.club/fps</loc>
-  <lastmod>2020-03-11T00:41:32+00:00</lastmod>
+  <lastmod>2020-07-05T03:34:06+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
