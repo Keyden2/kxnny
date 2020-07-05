@@ -808,6 +808,39 @@ body {
     padding: 0px;
     overflow-x: hidden;
   }
+
+  .shit {
+    width: 200px;
+    height: 150px;
+    transform: scale(0.6);
+    position: relative;
+    top: 10px;
+    left: -6%;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  #myVideo {
+    overflow-x: hidden;
+  }
+
+  .texto-centro {
+    justify-content: center;
+    position: relative;
+    font-size: 75px;
+    right: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+
+  .shit {
+    width: 200px;
+    height: 150px;
+    transform: scale(0.45);
+    position: relative;
+    top: 10px;
+    left: -6%;
+  }
 }
 
 
