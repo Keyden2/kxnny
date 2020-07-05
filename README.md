@@ -1,2 +1,2 @@
 # kxnnyx
-my website to promote my shoppy store.
+regedit and optimizations website shop
